@@ -1,2 +1,2 @@
 # website_practice
-My first project of website. With non-copyright images.
+My first project of a website. With non-copyright images.
