@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+body{
+    background-color: #424242;
+}
+#side-navbar {
+    background-color:#424242;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+  }
+#side-navbar  ul:not(.mini_menu){
+    color:white;
+    list-style-type: square;
+    margin-top:50px;
+    margin-bottom:60px;
+    padding-left:0;
+  }
+#side-navbar li a{
+    color:white;
+    text-decoration: none;
+  }
+ #side-navbar h1{
+    font-size: 25px;
+    margin-top:30px;
+    text-align: center;
+    color:white;
+  }
+.menu:not(.mini_menu){
+    font-style:bold;
+    text-align: center;
+    font-size: 20px;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+.mini_menu{
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.footer{
+    text-align: center;
+    color:white;
+    margin-top: 40%;
+}
+.footer a{
+    text-decoration: underline;
+    color:white;
+}
+#center{
+    height:100%;
+    display:inline-block;
+}
+.MAINSEOUL1{
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    display:inline-block;
+    margin-left:250px;
+    overflow: hidden;
+}
+.MAINSEOUL1 .tour{
+    width:100%;
+}
+.heart{
+    display: inline-block;
+    width: 4%;
+    text-align: right;
+    vertical-align: middle;
+}
+.MAINSEOUL1 ul{
+    text-align: left;
+    color:black;
+    font-size:20px;
+}
+.MAINSEOUL1 ul a{
+    text-align: left;
+    text-decoration: underline;
+    color: black;
+}
+.back{
+    width:100px;
+    text-align:right;
+    margin-right:10px;
+    float:right;
+}
