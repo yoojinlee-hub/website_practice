@@ -20,6 +20,9 @@ html, body {
     color:white;
     text-decoration: none;
   }
+li a:hover{
+    background-color: black;
+}
  #side-navbar h1{
     font-size: 25px;
     margin-top:30px;

@@ -23,6 +23,9 @@ body{
     color:white;
     text-decoration: none;
   }
+#side-navbar  li a:hover{
+    background-color: black;
+}
  #side-navbar h1{
     font-size: 25px;
     margin-top:30px;
@@ -73,6 +76,9 @@ body{
     width: 4%;
     text-align: right;
     vertical-align: middle;
+}
+.heart:active{
+    color:orange;/*javascript에서 구현해야 한다고 함*/
 }
 .MAINSEOUL1 ul{
     text-align: left;
