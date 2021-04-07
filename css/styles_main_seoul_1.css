@@ -59,6 +59,22 @@ body{
     height:100%;
     display:inline-block;
 }
+#center .MAINSEOUL1 .main_image{
+	width:1000px;
+	height:60%;
+	display:inline-block;
+}
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+}
+#center .MAINSEOUL1 .main_image img{
+	display:inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width:80%;
+	margin-top: 30px;
+}
 .MAINSEOUL1{
     background-color: white;
     height: 100%;
