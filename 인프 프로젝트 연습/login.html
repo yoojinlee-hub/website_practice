@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="en">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
+        <title>Yoojin's Tour</title>
+        <style>
+        body{background-color: black;}
+        #center{display: inline-block;}
+        legend{
+            font-size:30px;
+            color:white;
+            text-align: center;
+        }
+        fieldset{
+            display: inline-block;
+            border-color:white;
+            border:2px solid;
+            background-color: grey;
+            height:150px;
+        }
+        fieldset span{text-align: left; }
+        .buttons{text-align: center;}
+        </style>
+    </head>
+    <body>
+        <section id="center">
+	    <fieldset>
+            <legend>로그인 및 회원가입</legend>
+        <form method="post" action="save.jsp"> 
+            <span>ID&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="id" size="15px" maxlength="12" placeholder="id" required ></span><br>
+            <span>PASSWORD&nbsp;<input type="password" name="pw" size="15px" maxlength="12" placeholder="password" required></span><br><br>
+            <div class="buttons"><input type="submit" value="LOG-IN">&nbsp;&nbsp;
+            <input type="button" value="회원가입" onclick="window.open('')"><br>
+            <input type="button" value="close"><!--더 배우고 만들기-->
+            </div>
+        </form>
+        </fieldset>
+        </section>   
+
+    </body>
+</html>

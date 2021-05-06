@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="en">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
+        <title>Yoojin's Tour</title>
+        <link rel="stylesheet" href="css/styles_main_seoul_1.css"type="text/css">
+    </head>
+    <body>
+        <nav>
+        <div id="side-navbar">
+            <h1>YooJin's Tour</h1>
+            <hr class="make_menu">
+            <ul class="menu">
+              <li>MAINSEOUL
+                <ul class="mini_menu">
+                    <li><a href="Main_Seoul_1.html">HAN-RIVER</a></li>
+                    <li><a href="#">LOTTE-BUILDING</a></li>
+                    <li><a href="Main_Seoul_3.html">PALACE</a></li>
+                </ul></li>
+              <li>VINTAGE
+                <ul class="mini_menu">
+                    <li><a href="Vintage1.html">FLEA MARKET(SEOUL)</a></li>
+                    <li><a href="Vintage2.html">USED-BOOKSTORES(INCHEON)</a></li>
+                </ul></li>
+              <li>LOCAL
+                <ul class="mini_menu">
+                    <li><a href="MARKET_SEOUL.html">MARKET(SEOUL)</a></li>
+                    <li><a href="MARKET_INCHEON.html">MARKET(INCHEON)</a></li>
+                </ul></li>
+              <li><a href="mailto:adria96@hanmail.net" lang="ko">문의사항 QnA</a></li>
+            </ul>
+         <div class="footer" lang="en">
+                <button id="modalBtn">Login</button><br>
+                <button>My Wishlist</button>
+                <p>010-1111-2222</p>
+                <p><a href="index.html">GO BACK TO HOME</a></p>
+            </div>   
+        </nav>
+        <div id="popup">
+            <iframe id="popupFrame" src="" name="login" width="20" height="20" frameborder="0" scrolling="no"></iframe>  
+        </div>
+        <div id="main"></div>
+        <script type="text/javascript">
+            document.getElementById('modalBtn').onclick = displayPopup;
+            function displayPopup() {
+                var popup = document.getElementById("popup");
+                var frame = document.getElementById('popupFrame');
+                    frame.src = "login.html";
+                    popup.style.display = "block";
+                }
+        </script>
+
+        <section id="center">
+	        <div class="MAINSEOUL1">
+                <div class='helper'></div>
+                <div class='main_image'>
+	        	  <img class="tour"src="images/롯데빌딩.jpg" alt="롯데빌딩" height=90%>
+                </div>
+	        <article>
+	        	<h2>LOTTE BUILDING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="heart" src="images/heart.png" alt="heart"></h2>
+	        	<hr>
+	        	<ul class="reservation" lang="ko">
+                    <li><a href="https://korean.visitseoul.net/attractions/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%ED%83%80%EC%9B%8C_/21278" target="_blank">상세정보</a></li>
+                    <li>예약하기</li>
+                    <li style="list-style-type:none">
+                    	<form method="post" action="save.jsp"><label><input type="date" name="reserv_date" min="2021-03-01" max="2022-12-31"> <input type="submit" value="예약"></label></form></li>
+                </ul>
+                <a href="#"><img class="back" src="images/back.png" alt="back"></a>
+            </article>
+	        </div>
+        </section>   
+
+    </body>
+</html>

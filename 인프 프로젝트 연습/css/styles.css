@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+#side-navbar {
+    background-color:#424242;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+  }
+  ul:not(.mini_menu){
+    color:white;
+    list-style-type: square;
+    margin-top:50px;
+    margin-bottom:60px;
+    padding-left:0;
+  }
+ li a{
+    color:white;
+    text-decoration: none;
+    background-color: none;
+    transition: background;
+    transition-duration: 1.5s;
+  }
+li a:hover{
+    background-color: black;
+}
+ #side-navbar h1{
+    font-size: 25px;
+    margin-top:30px;
+    text-align: center;
+    color:white;
+  }
+.menu:not(.mini_menu){
+    font-style:bold;
+    text-align: center;
+    font-size: 20px;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+.mini_menu{
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#main{
+    background-image: url("../images/main.jpg");/* 배경화면 */
+    background-size: cover;
+    background-position: center center;
+    height:100%;
+    background-repeat: repeat-x;
+}
+.footer{
+    text-align: center;
+    color:white;
+    margin-top: 40%;
+}
+.footer a{
+    text-decoration: underline;
+    color:white;
+}
+#popup {
+    position:absolute;
+    bottom:50px;
+    left:250px;
+  display: none;
+}
+#popup iframe {
+  width: 350px;
+  height: 200px;
+}
+#modalBtn{
+    margin-bottom:5px;
+}
+.footer>button{
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+}

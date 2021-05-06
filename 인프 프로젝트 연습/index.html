@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
+        <title>Yoojin's Tour</title>
+        <link rel="stylesheet" href="css/styles.css"type="text/css">
+    </head>
+    <body>
+        <nav>
+        <div id="side-navbar" lang="en">
+            <h1>YooJin's Tour</h1>
+            <hr class="make_menu">
+            <ul class="menu">
+              <li>MAINSEOUL
+                <ul class="mini_menu">
+                    <li><a href="Main_Seoul_1.html">HAN-RIVER</a></li>
+                    <li><a href="Main_Seoul_2.html">LOTTE-BUILDING</a></li>
+                    <li><a href="Main_Seoul_3.html">PALACE</a></li>
+                </ul></li>
+              <li>VINTAGE
+                <ul class="mini_menu">
+                    <li><a href="Vintage1.html">FLEA MARKET(SEOUL)</a></li>
+                    <li><a href="Vintage2.html">USED-BOOKSTORES(INCHEON)</a></li>
+                </ul></li>
+              <li>LOCAL
+                <ul class="mini_menu">
+                    <li><a href="MARKET_SEOUL.html">MARKET(SEOUL)</a></li>
+                    <li><a href="MARKET_INCHEON.html">MARKET(INCHEON)</a></li>
+                </ul></li>
+              <li><a href="mailto:adria96@hanmail.net" lang="ko">문의사항 QnA</a></li>
+            </ul>
+         <div class="footer" lang="en">
+                <button id="modalBtn">Login</button><br>
+                <button>My Wishlist</button>
+                <p>010-1111-2222</p>
+                <p><a href="#">GO BACK TO HOME</a></p>
+            </div>   
+        </nav>
+        <div id="popup">
+        	<iframe id="popupFrame" src="" name="login" width="20" height="20" frameborder="0" scrolling="no"></iframe>  
+        </div>
+        <div id="main"></div>
+        <script type="text/javascript">
+        	document.getElementById('modalBtn').onclick = displayPopup;
+        	function displayPopup() {
+  				var popup = document.getElementById("popup");
+  				var frame = document.getElementById('popupFrame');
+  					frame.src = "login.html";
+  					popup.style.display = "block";
+				}
+        </script>
+    </body>
+</html>
