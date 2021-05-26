@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
         <title>Yoojin's Tour</title>
         <link rel="stylesheet" href="css/styles.css"type="text/css">
-    </head>
+          </head>
+          <script type="text/javascript">
+           window.onload = function() {
+    currentSound = new Audio('music/main.mp3');
+    currentSound.play();
+  }
+          </script>
     <body>
         <nav>
         <div id="side-navbar" lang="en">
@@ -33,7 +38,6 @@
             </ul>
          <div class="footer" lang="en">
                 <button id="modalBtn">Login</button><br>
-                <button>My Wishlist</button>
                 <p>010-1111-2222</p>
                 <p><a href="#">GO BACK TO HOME</a></p>
             </div>   
@@ -50,6 +54,15 @@
   					frame.src = "login.html";
   					popup.style.display = "block";
 				}
+            $(document).ready(function(){
+                $("#main").mouseenter(function(){
+                    $("#main").css({"background":"url(images/main2.jpg)","background-size": "cover","background-position": "center center","height":'100%',"background-repeat": "repeat-x"});  
+                });
+                $("#main").mouseleave(function(){
+                    $("#main").css({"background":"url(images/main.jpg)","background-size": "cover","background-position": "center center","height":'100%',"background-repeat": "repeat-x"});  
+                });
+            });
+
         </script>
     </body>
 </html>

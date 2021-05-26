@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
   }
+
 #side-navbar {
     background-color:#424242;
     height: 100%;

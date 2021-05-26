@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head lang="en">
+         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
@@ -33,11 +34,17 @@
             <span>PASSWORD&nbsp;<input type="password" name="pw" size="15px" maxlength="12" placeholder="password" required></span><br><br>
             <div class="buttons"><input type="submit" value="LOG-IN">&nbsp;&nbsp;
             <input type="button" value="회원가입" onclick="window.open('')"><br>
-            <input type="button" value="close"><!--더 배우고 만들기-->
+            <input type="button" id="close"value="close">
             </div>
         </form>
         </fieldset>
         </section>   
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#close").click(function(){
+            $('html').hide();
+        });
+    });
+</script>
     </body>
 </html>

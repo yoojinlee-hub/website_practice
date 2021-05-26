@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head lang="en">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/js.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     	<meta charset="utf-8"  X-Content-Type-Options="nosniff">
         <title>Yoojin's Tour</title>
         <link rel="stylesheet" href="css/styles_main_seoul_1.css"type="text/css">
+         <script type="text/javascript">
+           window.onload = function() {
+    currentSound = new Audio('music/헌책방.mp3');
+    currentSound.play();
+  }
+          </script>
     </head>
     <body>
         <nav>
@@ -33,7 +41,6 @@
             </ul>
            <div class="footer" lang="en">
                 <button id="modalBtn">Login</button><br>
-                <button>My Wishlist</button>
                 <p>010-1111-2222</p>
                 <p><a href="index.html">GO BACK TO HOME</a></p>
             </div>   
@@ -50,6 +57,10 @@
                     frame.src = "login.html";
                     popup.style.display = "block";
                 }
+            function changeHeart(){
+                var img=document.getElementById('heart');
+                img.src='images/fullHeart.png';
+            }
         </script>
         <section id="center">
 	        <div class="MAINSEOUL1">
@@ -58,18 +69,27 @@
 	        	  <img class="tour"src="images/헌책방.jpg" alt="헌책방" height=500px>
                 </div>
 	        <article>
-	        	<h2>USED-BOOKSTORES&nbsp;&nbsp;&nbsp;&nbsp;<img class="heart" src="images/heart.png" alt="heart"></h2>
+	        	<h2>USED-BOOKSTORES&nbsp;&nbsp;&nbsp;&nbsp;<img id="heart" src="images/heart.png" onclick='changeHeart()'alt="heart"></h2>
 	        	<hr>
 	        	<ul class="reservation" lang="ko">
                     <li><a href="https://itour.incheon.go.kr/NTK_10000/Read.jsp?No=40" target="_blank">상세정보</a></li>
                     <li>예약하기</li>
                     <li style="list-style-type:none">
-                    	<form method="post" action="save.jsp"><label><input type="date" name="reserv_date" min="2021-03-01" max="2022-12-31"> <input type="submit" value="예약"></label></form></li>
+                    	<form method="post" action="save.jsp"><label><input type="date" name="reserv_date" min="2021-03-01" max="2022-12-31"id='date'> <input type="submit" value="예약" onclick='checkDate()'></label></form></li>
                 </ul>
-                <a href="#"><img class="back" src="images/back.png" alt="back"></a>
+                <a href="javascript:history.back();"><img class="back" src="images/back.png" alt="back"></a>
             </article>
 	        </div>
         </section>   
-
+<script>
+    $(document).ready(function(){
+                $(".tour").mouseenter(function(){
+                    $(".tour").attr("src","images/헌책방2.jpg");  
+                });
+            });
+    $(".tour").mouseleave(function(){
+                    $(".tour").attr("src","images/헌책방.jpg");  
+                });
+</script>
     </body>
 </html>
